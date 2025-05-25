@@ -55,7 +55,7 @@ def clasificar():
         if tema == "tarjeta":
             #Llamar al agente de tarjetas 
             url_tarjetas = "https://agente-tarjetas.onrender.com/respuesta-tarjetas"
-            respuesta_tarjeta = requests.post(url_tarjetas)
+            respuesta_tarjeta = requests.post(url_tarjetas, json={"consulta": mensaje_usuario})
             
             if respuesta_tarjeta.status_code == 200:
                 data_tarjeta = respuesta_tarjeta.json()
