@@ -54,7 +54,7 @@ def clasificar():
         # Paso 2: Enrutamiento según el tema
         if tema == "tarjeta":
             #Llamar al agente de tarjetas 
-            url_tarjetas = "https://agente-tarjetas.onrender.com"
+            url_tarjetas = "https://agente-tarjetas.onrender.com/respuesta-tarjetas"
             respuesta_tarjeta = requests.get(url_tarjetas)
             
             if respuesta_tarjeta.status_code == 200:
