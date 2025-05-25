@@ -1,6 +1,5 @@
 #LIBRERÍAS
 from flask import Flask, request, jsonify
-from pyngrok import ngrok
 from openai import OpenAI
 import traceback
 import requests
