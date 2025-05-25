@@ -96,6 +96,6 @@ def clasificar():
         traceback.print_exc()
         return jsonify({"error": "Error interno en el servidor"}), 500
 
-#INICIAR FLASK EN SEGUNDO PLANO
-def iniciar_servidor():
-    app.run(port=5000)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
+
